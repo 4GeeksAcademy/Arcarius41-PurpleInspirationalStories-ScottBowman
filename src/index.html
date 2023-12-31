@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+
+    <!-- Include Tailwind CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+
+  <!-- Change code below this line -->
+
+  <body class="bg-purple-800 h-screen flex items-center justify-center">
+    <div
+      class="bg-white p-8 rounded-xl max-w-5xl items-center text-center relative"
+    >
+      <!-- Your content goes here -->
+      <button class="bg-purple-800 px-4 py-1 rounded-full text-white">
+        Art
+      </button>
+      <h2 class="text-2xl font-bold mb-4 mt-2">Inspirational stories</h2>
+      <h4 class="text-base mb-3 font-semibold text-purple-800">
+        Explore inspirational and motivational stories by creatives with decades
+        of experience in the field.
+      </h4>
+      <div class="innerContainer flex flex-row items-start justify-center">
+        <div class="innerBox1 p-2 rounded flex-shrink-0 relative">
+          <img src="https://spaceholder.cc/i/400x200" alt="dummy image" />
+          <div
+            class="text-container absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 p-4 rounded"
+          >
+            <p class="text-white">
+              How to stop wasting time and start exploring the opportunities
+              around you
+            </p>
+          </div>
+        </div>
+        <div class="innerBox2 p-2 rounded flex-shrink-0">
+          <a href=""
+            ><img
+              class="w-20 h-12"
+              src="https://i.ibb.co/SJD4kNZ/77091014-l.jpg"
+              alt=""
+          /></a>
+          <h3 class="font-bold text-sm mb-2">Lazy man's cooking guide</h3>
+          <p class="max-w-xs mr-auto">
+            This award-winning chef shares his secrets to healthy, tasty, and
+            efficient meal preparation. Welcome to the best eating possible
+          </p>
+        </div>
       </div>
+      <button class="bg-purple-800 px-10 py-1 mt-5 rounded text-white">
+        Read more on the blog
+      </button>
     </div>
   </body>
+  <!-- Change code above this line -->
 </html>
